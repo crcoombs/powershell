@@ -1,4 +1,6 @@
-﻿<#
+﻿Function Select-Newest
+{
+<#
 .SYNOPSIS
 Determines the newest file or directory.
 
@@ -24,8 +26,6 @@ C:\PS> Select-Newest C:\foo.txt, C:\bar.txt
 .EXAMPLE
 C:\PS> Select-Newest C:\foo.txt, C:\bar
 #>
-Function Select-Newest
-{
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory=$True,ValueFromPipeline=$True)]

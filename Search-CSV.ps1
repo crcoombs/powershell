@@ -1,4 +1,6 @@
-﻿<#
+﻿Function Search-CSV
+{
+<#
 .SYNOPSIS
 Retrives values from CSV data.
 
@@ -23,8 +25,6 @@ C:\PS> Search-CSV -Path list.csv -SearchColumn Name -SearchValue Steve -ResultCo
 .EXAMPLE
 C:\PS> Search-CSV $data Name Mark Age,Address
 #>
-Function Search-CSV
-{
     [CmdletBinding(DefaultParameterSetName="Path")]
     Param (
         [Parameter(ParameterSetName="Path", Mandatory=$True, Position=1)]

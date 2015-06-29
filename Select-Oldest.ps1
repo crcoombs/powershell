@@ -1,4 +1,6 @@
-﻿<#
+﻿Function Select-Oldest
+{
+<#
 .SYNOPSIS
 Finds the oldest file or directory.
 
@@ -24,8 +26,6 @@ C:\PS> Select-Oldest C:\foo.txt, C:\bar.txt
 .EXAMPLE
 C:\PS> Select-Oldest C:\foo.txt, C:\bar
 #>
-Function Select-Oldest
-{
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory=$True,ValueFromPipeline=$True)]
